@@ -2,7 +2,10 @@
     <img src="./assets/logo/black.svg" width="150px"/>
 </p>
 
-### social
+### project's
+...
+
+### social's
 * [Twitter](https://twitter.com/axavtwitt)
 * [Facebook](https://facebook.com/axavfaceb)
 * [VK](https://vk.com/axavk)
