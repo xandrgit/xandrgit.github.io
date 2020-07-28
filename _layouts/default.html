@@ -10,10 +10,13 @@
     <div class="wrapper">
       <section>
         <div id="title">
-          <img src="./assets/logo/white.svg" width="150px">
+          <h1><img src="./assets/logo/white.svg" width="150px"></h1>
           <hr>
           <span class="credits right">
-            SOCIAL's
+            <a href="https://twitter.com/{{ site.data.social.TWITTER }}" target="_blank">Twitter</a>
+            {{ for social in site.data.social.OTHER }}
+            &nbsp;<a href="{{ social.url }}" target="_blank">{{ social.name }}</a>
+            {{ endfor }}
           </span>
         </div>
         {{ content }}
