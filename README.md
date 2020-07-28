@@ -1,3 +1,3 @@
 <p align="center">
-    <img src="./assets/logo/black.svg" width="150px"/>
+    <a href="."><img src="./assets/logo/black.svg" width="150px"/></a>
 </p>
