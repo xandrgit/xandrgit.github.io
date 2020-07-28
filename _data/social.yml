@@ -1,2 +1,5 @@
-- name: Twitter
-  url: https://twitter.com/axavtwitt
+TWITTER: axavtwitt
+
+OTHER:
+  - name: Facebook
+    url: https://fb.com/axavfaceb
