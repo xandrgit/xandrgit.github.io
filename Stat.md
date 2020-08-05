@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /stat
-lang: RU
+lang: EN
 ---
 
 {{ site.data.lang[page.lang].label }}
