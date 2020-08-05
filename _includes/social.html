@@ -1,13 +1,3 @@
-<a href="https://twitter.com/axavtwitt" target="_blank">Twitter</a>
-&nbsp;
-<a href="https://fb.com/axavfaceb" target="_blank">Facebook</a>
-&nbsp;
-<a href="https://vk.com/axavk" target="_blank">VK</a>
-&nbsp;
-<a href="https://axavgame.itch.io/" target="_blank">itch.io</a>
-&nbsp;
-<a href="https://axavgame.gamejolt.io/" target="_blank">GameJolt</a>
-&nbsp;
-<a href="https://axavmusic.bandcamp.com/" target="_blank">Bandcamp</a>
-&nbsp;
-<a href="https://www.patreon.com/axavpatreon" target="_blank">Patreon</a>
+<a href="https://twitter.com/{{ site.data.social.TWITTER }}" target="_blank">Twitter</a>
+{% for social in site.data.social %}&nbsp;
+<a href="{{ social.url }}" target="_blank">{{ social.name }}</a>{% endfor %}
