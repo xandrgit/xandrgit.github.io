@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /
 ---
 
-{{ content }}
+{% include project.html %}
