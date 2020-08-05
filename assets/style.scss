@@ -3,10 +3,6 @@
 
 @import "jekyll-theme-midnight";
 
-.prj {
-  text-align: center;
-  $_table {
-    width: 100%;
-    $_img { width: 100px; }
-  }
-}
+.prj { text-align: center; }
+.prj_table { width: 100%; }
+.prj_table_img { width: 100px; }
