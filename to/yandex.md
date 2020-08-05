@@ -3,4 +3,6 @@ layout: default
 permalink: /to/yandex
 ---
 
-Go2: [Yandex.ru](https://yandex.ru)
+<script>
+  location.href="https://vk.cc/axU96T";
+</script>
