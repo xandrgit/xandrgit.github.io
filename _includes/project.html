@@ -1,0 +1,11 @@
+<div class="prj">
+<table border="0" class="prj_table"><tbody>
+{% for prj in site.data.project %}
+  <tr>
+    <td><a href="{{ prj.url }}" target="_blank"><img class="prj_table_img" src="{{ prj.img }}"/></a></td>
+    <tr><a href="{{ prj.url }}" target="_blank">{{ prj.name }}</a></tr>
+    <td>{{ prj.desc }}</td>
+  </tr>
+{% endfor %}
+</tbody></table>
+</div>
