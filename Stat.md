@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /stat
 lang: RU
 ---
 
