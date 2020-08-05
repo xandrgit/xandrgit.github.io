@@ -5,5 +5,8 @@
 
 .prj {
   text-align: center;
-  $_table { width: 100%; }
+  $_table {
+    width: 100%;
+    $_img { width: 100px; }
+  }
 }
