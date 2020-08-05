@@ -3,7 +3,7 @@
 #  img: IMAGE URL
 #  url: URL
 
-#- name: TrainOff
-#  desc: Don’t do Trainhopping
+#- name: TrainSurfs
+#  desc: Don’t do Train Surfing
 #  img: undefined
-# url: /trainoffgame
+# url: /trainsurfsgame
