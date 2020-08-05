@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" href="{{ './assets/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
-    <link rel="stylesheet" href="{{ './assets/fav.ico?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ './assets/style.css' | relative_url }}"/>
+    <link rel="shortcut icon" href="{{ './assets/fav.ico' | relative_url }}">
     <title>Alexander "axav" Antonov</title>
   </head>
   <body>
     <div class="wrapper">
       <section>
         <div id="title">
-          <h1 style="text-align: center;"><a href="{{ '/' | append: site.github.build_revision | relative_url }}"><img src="{{ './assets/logo/white.svg?v=' | append: site.github.build_revision | relative_url }}" width="150px"></a></h1>
+          <h1 style="text-align: center;"><a href="{{ '/' | relative_url }}"><img src="{{ './assets/logo/white.svg' | relative_url }}" width="150px"></a></h1>
           <hr>
           <span class="credits right">
             {% include social.html %}
