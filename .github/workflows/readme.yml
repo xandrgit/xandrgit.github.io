@@ -1,8 +1,10 @@
 name: README.yml
 
-on: deploy
+on: deployment
 
 jobs:
-  run:
+  build:
+    runs-on: ubuntu-latest
+    steps:
     - name: Create dir
       run: mkdir DIREPO
