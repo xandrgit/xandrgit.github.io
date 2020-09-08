@@ -5,6 +5,21 @@ jobs:
   rewrite:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: NODE.js
-      run: 'echo "NODE.js"'
+      - name: cd dir
+        run: cd anxgit
+      - uses: actions/checkout@v2
+      - name: Prebuild Readme
+        run: 'npm start'
+      - name: Pull
+        run: |
+          git clone https://github.com/anxgit/anxgit.git
+          cd anxgit
+          rm -rf README.md
+          mv ../README.prebuild.md README.md
+          git add .
+          git config --global user.name 'anxgit'
+          git config --global user.email 'biz.showpozitif5@gmail.com'
+          git commit -am "Update README (via GitHub Actions)"
+          git push
+          cd ..
+          rm -rf anxgit
