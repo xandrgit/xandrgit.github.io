@@ -9,5 +9,9 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         git clone https://github.com/anxgit/anxgit.git
-        rm -rf anxgit/README.md
-        cp README.md anxgit/README.md
+        cd anxgit
+        rm -rf README.md
+        cp ../README.md README.md
+        git add .
+        git commit -m "Update"
+        git push
