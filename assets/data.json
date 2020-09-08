@@ -1,4 +1,4 @@
 ---
 ---
 
-{"social": {{ site.data.social }}, "projects": {{ site.data.project }}}
+{"social": {{ site.data.social }}, "project": {{ site.data.project }}}
