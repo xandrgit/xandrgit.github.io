@@ -12,8 +12,8 @@ jobs:
         cd anxgit
         rm -rf README.md
         cp ../README.md README.md
-        git add .
         it config --global user.email "biz.showpozitif5@gmail.com"
         git config --global user.name "Alexander"
+        git add .
         git commit -m "Update"
         git push
