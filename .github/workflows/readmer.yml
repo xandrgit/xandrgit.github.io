@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secret.GITHUB_TOKEN }}
     - run: |
         git clone https://github.com/anxgit/anxgit.git
         cd anxgit
