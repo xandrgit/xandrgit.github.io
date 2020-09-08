@@ -1,0 +1,4 @@
+---
+---
+
+{"social": "{{ site.data.social }}"}
