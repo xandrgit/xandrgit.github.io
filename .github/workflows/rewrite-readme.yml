@@ -5,4 +5,5 @@ jobs:
   rewrite:
     runs-on: ubuntu-latest
     steps:
-      - run: 'echo "Hello!"'
+      - uses: actions/checkout@v1
+          run: 'echo "NODE.js"'
