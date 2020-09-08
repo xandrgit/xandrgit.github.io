@@ -1,0 +1,9 @@
+name: Rewrite README.md in anxgit repo
+on: push
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        echo 'Hello!'
