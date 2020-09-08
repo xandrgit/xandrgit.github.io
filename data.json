@@ -1,6 +1,0 @@
----
----
-
-{
-  "social": {{ site.data.social }}
-}
