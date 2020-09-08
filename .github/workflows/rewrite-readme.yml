@@ -5,8 +5,10 @@ jobs:
   rewrite:
     runs-on: ubuntu-latest
     steps:
-      - name: cd dir
+      - name: cd workdir
         run: cd anxgit
+      - name: init
+        run: npm i -D
       - uses: actions/checkout@v2
       - name: Prebuild Readme
         run: 'npm start'
