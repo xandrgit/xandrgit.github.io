@@ -1,10 +1,10 @@
 name: README.yml
 
-on: deployment
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Create dir
-      run: mkdir DIREPO; ls
+    - name: Nodejs Version
+      run: npm -v
