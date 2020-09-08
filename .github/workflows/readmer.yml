@@ -7,9 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: ls
-      run: ls
-    - name: Git clone
-      run: git clone https://github.com/anxgit/anxgit.git
-    - name: cd to git
-      run: cd anxgit
+    - run: |
+        git clone https://github.com/anxgit/anxgit.git
+        rm -rf anxgit/README.md
+        cp README.md anxgit/README.md
