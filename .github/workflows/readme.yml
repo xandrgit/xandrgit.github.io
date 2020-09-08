@@ -1,0 +1,8 @@
+name: README.yml
+
+on: deploy
+
+jobs:
+  run:
+    - name: Create dir
+      run: mkdir DIREPO
