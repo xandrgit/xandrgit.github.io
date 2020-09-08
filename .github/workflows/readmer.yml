@@ -6,9 +6,9 @@ jobs:
   render:
     runs-on: ubuntu-latest
     steps:
-    - name: Git clone
-      run: git clone https://github.com/anxgit/anxgit.git
     - name: ls
       run: ls
+    - name: Git clone
+      run: git clone https://github.com/anxgit/anxgit.git
     - name: cd to git
       run: cd anxgit
