@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "node ./rewrite.js"
+    "start": "node ./anxgit/rewrite.js"
   },
   "devDependencies": {
     "@octokit/core": "^3.1.2",
