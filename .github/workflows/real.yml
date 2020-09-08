@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Create dir
-      run: mkdir DIREPO
+      run: mkdir DIREPO; ls
