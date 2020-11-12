@@ -10,12 +10,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2.1.2
-    - uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
     - name: Work
       run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
     - name: Commit (README.md)
+      uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
       with:
         source_file: 'anxgit/README.md'
         destination_repo: 'anxgit/anxgit'
