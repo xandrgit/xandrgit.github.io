@@ -19,7 +19,7 @@ let prjData2 = "";
 if(projectData.length !== 0) {
   projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData2 += `### [${prj.name}](${prj.url})\n${prj.desc}\n\n`; });
 } else {
-  prjData2 = "No projects at the moment";
+  prjData2 = "No projects at the moment\n";
 };
 /* Social */
 let sd = "";
