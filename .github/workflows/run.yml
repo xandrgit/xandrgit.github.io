@@ -8,12 +8,11 @@ jobs:
   editProfile:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-node@v2.1.2
-    - name: Init
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         repository: 'anxgit/anxgit'
         ref: ${{secrets.PAT}}
+    - uses: actions/setup-node@v2.1.2
     - name: Work
       run: |
         git clone https://github.com/anxgit/anxgit
