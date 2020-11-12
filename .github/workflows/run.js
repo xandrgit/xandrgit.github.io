@@ -8,7 +8,7 @@ if(projectData.length !== 0) {
   projectData.map((prj, i) => {
     prjData += `### [${prj.name}](${prj.url})\n${prj.desc}\n\n`;
   });
-  fs.writeFile(process.cwd() + "/anxgit/PROJECTS.md", Data, (err) => { console.error(err); });
+  fs.writeFile(process.cwd() + "/anxgit/PROJECTS.md", prjData, (err) => { console.error(err); });
 } else {
   fs.writeFile(process.cwd() + "/anxgit/PROJECTS.md", "No projects at the moment", (err) => { console.error(err); });
 };
