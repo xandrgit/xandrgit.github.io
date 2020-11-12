@@ -13,6 +13,5 @@ jobs:
     - run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
-        cat anxgit/README.md
-        echo "\n\nprj\n\n"
-        cat anxgit/PROJECTS.md
+        cd anxgit; git add *; git commit -m "GitHub Actions: Edit files";
+        git push
