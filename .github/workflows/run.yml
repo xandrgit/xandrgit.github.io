@@ -10,12 +10,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2.1.2
-    - run: |
+    - name: Work
+      run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
+    - name: Commit
+      run: |
         cd anxgit;
+        git config user.name "Alexander Antonov";
+        git config user.email "biz.showpozitif5@gmail.com";
         git add *;
-        git config --local user.email "anxgit@github.com"
-        git config --local user.name "Alexander Antonov"
-        git commit -m "GitHub Actions: Edit files" -a;
-        git push
+        git commit -am "GitHub Actions: Edit files";
+        git push origin master;
