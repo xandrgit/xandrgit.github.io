@@ -1,1 +1,1 @@
-current time
+{{ site.time }}
