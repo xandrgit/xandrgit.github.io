@@ -2,6 +2,7 @@ on:
   push:
     paths:
     - '_data/project.json'
+    - '_data/social.json'
     
 jobs:
   editProfile:
