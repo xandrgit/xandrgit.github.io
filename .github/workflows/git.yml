@@ -11,6 +11,5 @@ jobs:
     - uses: actions/setup-node@v2.1.2
     - run: |
         git clone https://github.com/anxgit/anxgit
-        ls
         node .github/workflows/run.js
         cat anxgit/PROJECTS.md
