@@ -14,6 +14,21 @@ if(projectData.length !== 0) {
 };
 
 // reWrite anxgit/README.md
+
+/* Projects */
+let prjData2 = "";
+if(projectData.length !== 0) {
+  projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData2 += `### <a href="${prj.url}">${prj.name}</a>\n${prj.desc}\n\n`; });
+} else {
+  prjData2 = "No projects at the moment";
+};
+
+/* Social */
+let sd = "";
+socialData.map((soc, i) => { if(i !== 0) {
+  sd += ` &bull;[${soc.name}](${soc.url})`;
+} });
+
 let socData = `<h1 align="center">
     <a href="https://github.com/anxgit/anxgit/blob/master/README.md" target="_blank">
         <img src="https://raw.githubusercontent.com/anxgit/anxgit.github.io/master/assets/logo/black.svg" width="100px"/>
@@ -25,22 +40,6 @@ let socData = `<h1 align="center">
 
 ## Social
 [${socialData[0].name}](${socialData[0].url})===SOCIAL===`;
-
-/* Projects */
-if(projectData.length !== 0) {
-  let prjData = "";
-  projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData += `### <a href="${prj.url}">${prj.name}</a>\n${prj.desc}\n\n`; });
-  console.log(prjData);
-  socData.replace("===PROJECTS===", prjData);
-  console.log(socData);
-} else {
-  socData.replace("===PROJECTS===", "No projects at the moment");
-};
-
-/* Social */
-let sd = "";
-socialData.map((soc, i) => { if(i !== 0) {
-  sd += ` &bull;[${soc.name}](${soc.url})`;
-} });
-socData.replace("===SOCIAL===", sd);
-fs.writeFile(process.cwd() + "/anxgit/README.md", socData, (err) => { console.error(err); });
+console.log(prjData2);
+console.log(sd);
+//fs.writeFile(process.cwd() + "/anxgit/README.md", socData, (err) => { console.error(err); });
