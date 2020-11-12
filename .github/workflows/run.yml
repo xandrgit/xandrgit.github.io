@@ -10,14 +10,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2.1.2
-    - name: Work
-      run: |
-        git clone https://github.com/anxgit/anxgit
-        node .github/workflows/run.js
     - uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         repository: anxgit
+    - name: Work
+      run: |
+        git clone https://github.com/anxgit/anxgit
+        node .github/workflows/run.js
     - name: Commit
       run: |
         cd anxgit;
