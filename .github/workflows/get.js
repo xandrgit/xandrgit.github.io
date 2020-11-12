@@ -1,10 +1,7 @@
-/*const testFolder = './tests/';
-const fs = require('fs');
+const fs = require("fs");
 
-fs.readdir(testFolder, (err, files) => {
+fs.readdir(process.cwd(), (err, files) => {
   files.forEach(file => {
     console.log(file);
   });
-});*/
-
-console.log(process.cwd());
+});
