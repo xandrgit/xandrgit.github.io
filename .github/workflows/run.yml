@@ -17,7 +17,7 @@ jobs:
     - name: Commit
       run: |
         cd anxgit;
-        git config user.name "Alexander Antonov";
+        git config user.name "anxgit";
         git config user.email "biz.showpozitif5@gmail.com";
         git add *;
         git commit -am "GitHub Actions: Edit files";
