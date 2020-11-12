@@ -24,7 +24,7 @@ if(projectData.length !== 0) {
 /* Social */
 let sd = "";
 socialData.map((soc, i) => { if(i !== 0) {
-  sd += ` &bull;[${soc.name}](${soc.url})`;
+  sd += ` &bull; [${soc.name}](${soc.url})`;
 } });
 let socData = `<h1 align="center">
     <a href="https://github.com/anxgit/anxgit/blob/master/README.md" target="_blank">
