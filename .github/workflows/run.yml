@@ -14,11 +14,9 @@ jobs:
       run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
-    - name: Commit (README.md)
-      uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
-      with:
-        source_file: 'anxgit/README.md'
-        destination_repo: 'anxgit/anxgit'
-        user_email: biz.showpozitif5@gmail.com
-        user_name: anxgit
-        commit: 'GitHub Actions: Edit README.md'
+    - name: Commit
+      run: |
+        cd anxgit
+        git add *
+        git commit -m "Update (via GitHub Actions)"
+        git push
