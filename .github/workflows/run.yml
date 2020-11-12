@@ -13,5 +13,9 @@ jobs:
     - run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
-        cd anxgit; git add *; git commit -m "GitHub Actions: Edit files";
+        cd anxgit;
+        git add *;
+        git config --local user.email "anxgit@github.com"
+        git config --local user.name "Alexander Antonov"
+        git commit -m "GitHub Actions: Edit files" -a;
         git push
