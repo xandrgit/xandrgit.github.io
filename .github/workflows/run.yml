@@ -13,3 +13,7 @@ jobs:
     - run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
+        echo "\n\n"
+        cat anxgit/README.md
+        echo "\n\n"
+        cat anxgit/PROJECTS.md
