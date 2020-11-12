@@ -1,4 +1,4 @@
 ---
 ---
 
-{{ page.data }}
+{{ page.date }}
