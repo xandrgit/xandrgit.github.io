@@ -10,17 +10,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2.1.2
-    - uses: ad-m/github-push-action@v0.6.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: anxgit/anxgit
+    - uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
     - name: Work
       run: |
         git clone https://github.com/anxgit/anxgit
         node .github/workflows/run.js
-    - name: Commit
-      run: |
-        cd anxgit;
-        git add *;
-        git commit -m "GitHub Actions: Edit files";
-        git push origin master;
+    - name: Commit (README.md)
+      with:
+        source_file: 'anxgit/README.md'
+        destination_repo: 'anxgit/anxgit'
+        user_email: biz.showpozitif5@gmail.com
+        user_name: anxgit
+        commit: 'GitHub Actions: Edit README.md'
