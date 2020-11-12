@@ -30,7 +30,9 @@ let socData = `<h1 align="center">
 if(projectData.length !== 0) {
   let prjData = "";
   projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData += `### <a href="${prj.url}">${prj.name}</a>\n${prj.desc}\n\n`; });
+  console.log(prjData);
   socData.replace("===PROJECTS===", prjData);
+  console.log(socData);
 } else {
   socData.replace("===PROJECTS===", "No projects at the moment");
 };
