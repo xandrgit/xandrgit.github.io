@@ -17,7 +17,7 @@ if(projectData.length !== 0) {
 /* Projects */
 let prjData2 = "";
 if(projectData.length !== 0) {
-  projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData2 += `### [${prj.name}](${prj.url})\n${prj.desc}\n`; });
+  projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData2 += `### [${prj.name}](${prj.url})\n${prj.desc}\n\n`; });
 } else {
   prjData2 = "No projects at the moment";
 };
@@ -34,7 +34,6 @@ let socData = `<h1 align="center">
 
 ## [Projects](./PROJECTS.md)
 ${prjData2}
-
 ## Social
 [${socialData[0].name}](${socialData[0].url})${sd}`;
 fs.writeFile(process.cwd() + "/anxgit/README.md", socData, (err) => { console.error(err); });
