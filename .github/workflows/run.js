@@ -21,18 +21,18 @@ let socData = `<h1 align="center">
 </h1>
 
 ## [Projects](./PROJECTS.md)
-{% PROJECTS %}
+===PROJECTS===
 
 ## Social
-[${socialData[0].name}](${socialData[0].url}){% SOCIAL %}`;
+[${socialData[0].name}](${socialData[0].url})===SOCIAL===`;
 
 /* Projects */
 if(projectData.length !== 0) {
   let prjData = "";
   projectData.map((prj, i) => { if(i === 0 || i === 1 || i === 2) prjData += `### <a href="${prj.url}">${prj.name}</a>\n${prj.desc}\n\n`; });
-  socData.replace(/{% PROJECTS %}/g, prjData);
+  socData.replace("===PROJECTS===", prjData);
 } else {
-  socData.replace(/{% PROJECTS %}/g, "No projects at the moment");
+  socData.replace("===PROJECTS===", "No projects at the moment");
 };
 
 /* Social */
@@ -40,5 +40,5 @@ let sd = "";
 socialData.map((soc, i) => { if(i !== 0) {
   sd += ` &bull;[${soc.name}](${soc.url})`;
 } });
-socData.replace(/{% SOCIAL %}/g, sd);
+socData.replace("===SOCIAL===", sd);
 fs.writeFile(process.cwd() + "/anxgit/README.md", socData, (err) => { console.error(err); });
