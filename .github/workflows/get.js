@@ -5,3 +5,6 @@ fs.readdir(process.cwd(), (err, files) => {
     console.log(file);
   });
 });
+
+const projectData = require(process.cwd() + "/_data/project.json");
+console.log(projectData);
