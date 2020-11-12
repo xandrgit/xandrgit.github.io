@@ -13,7 +13,7 @@ jobs:
     - uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: anxgit
+        repository: anxgit/anxgit
     - name: Work
       run: |
         git clone https://github.com/anxgit/anxgit
