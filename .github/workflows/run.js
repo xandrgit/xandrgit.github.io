@@ -14,7 +14,6 @@ if(projectData.length !== 0) {
 };
 
 // reWrite anxgit/README.md
-
 /* Projects */
 let prjData2 = "";
 if(projectData.length !== 0) {
@@ -22,13 +21,11 @@ if(projectData.length !== 0) {
 } else {
   prjData2 = "No projects at the moment";
 };
-
 /* Social */
 let sd = "";
 socialData.map((soc, i) => { if(i !== 0) {
   sd += ` &bull;[${soc.name}](${soc.url})`;
 } });
-
 let socData = `<h1 align="center">
     <a href="https://github.com/anxgit/anxgit/blob/master/README.md" target="_blank">
         <img src="https://raw.githubusercontent.com/anxgit/anxgit.github.io/master/assets/logo/black.svg" width="100px"/>
@@ -36,10 +33,8 @@ let socData = `<h1 align="center">
 </h1>
 
 ## [Projects](./PROJECTS.md)
-===PROJECTS===
+${prjData2}
 
 ## Social
-[${socialData[0].name}](${socialData[0].url})===SOCIAL===`;
-console.log(prjData2);
-console.log(sd);
-//fs.writeFile(process.cwd() + "/anxgit/README.md", socData, (err) => { console.error(err); });
+[${socialData[0].name}](${socialData[0].url})${sd}`;
+fs.writeFile(process.cwd() + "/anxgit/README.md", socData, (err) => { console.error(err); });
