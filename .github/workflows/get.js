@@ -7,4 +7,4 @@ fs.readdir(testFolder, (err, files) => {
   });
 });*/
 
-console.log(process.pwd());
+console.log(process.cwd());
