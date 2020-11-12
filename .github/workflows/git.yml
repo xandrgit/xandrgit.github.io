@@ -1,0 +1,13 @@
+on:
+  push:
+    paths:
+    - '_data/project.json'
+    
+jobs:
+  editProfile:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      run: |
+      git clone https://github.com/anxgit/anxgit
+      ls
