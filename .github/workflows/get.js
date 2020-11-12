@@ -1,3 +1,10 @@
-const data = require("./_data/projects.json");
+/*const testFolder = './tests/';
+const fs = require('fs');
 
-console.log(data);
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});*/
+
+console.log(process.pwd());
