@@ -8,6 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      run: |
-      git clone https://github.com/anxgit/anxgit
-      ls
+    - uses: actions/setup-node@v2.1.2
+    - run: node .github/workflows/run.js
