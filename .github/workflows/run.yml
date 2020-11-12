@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: 'anxgit/anxgit'
-        token: ${{ secrets.PAT }}
+        token: ${{secrets.PAT}}
     - uses: actions/setup-node@v2.1.2
     - name: Work
       run: |
@@ -25,4 +25,4 @@ jobs:
         git commit -m "Add changes" -a
         git push https://anxgit:$REPO_KEY@github.com/anxgit/anxgit.git master
       env:
-        REPO_KEY: ${{ secrets.PAT }}
+        REPO_KEY: ${{secrets.PAT}}
