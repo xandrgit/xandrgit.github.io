@@ -1,1 +1,12 @@
-{}
+{
+  "proton": {
+    "name": "Proton (codename)",
+    "desc": "Arcade game (in developing)",
+    "desc_full": "A simple arcade game inspired by the game «2048». Currently in development (9,47% created)",
+    "go": {
+      "text": "Official webpage",
+      "title": "Proton homepage",
+      "url": "https://anxgit.github.io/project/proton"
+    }
+  }
+}
