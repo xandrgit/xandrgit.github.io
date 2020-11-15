@@ -1,5 +1,1 @@
----
-permalink: /project/:project
----
-
-Home page
+https://anxgit.github.io
