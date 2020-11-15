@@ -1,1 +1,3 @@
+RewriteCond %{REQUEST_FILENAME}.md -f
+RewriteRule !.*\.md$ %{REQUEST_FILENAME}.md [QSA,L]
 ErrorDocument 404 /404.html
