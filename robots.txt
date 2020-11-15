@@ -1,4 +1,1 @@
 User-agent: *
-Disallow: /404.md
-Disallow: /index.md
-Disallow: /project/*.md
