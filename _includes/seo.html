@@ -1,1 +1,7 @@
-<!-- {{ page.url | split: "/" | last | split: ".html" | first }} -->
+<!--
+{% if {{ page.url | split: "/" | last | split: ".html" | first }} !== "" %}
+PROJECT
+{% else %}
+HOME
+{% endif %}
+-->
