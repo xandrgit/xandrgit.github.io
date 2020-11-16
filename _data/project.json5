@@ -1,14 +1,24 @@
 {
-  /*"proton": {
-    "name": "Proton",
+  /*"4kindgame": {
+    "name": "4Kind",
     "desc": "DESC",
-    "cover": "#cover",
+    "cover": "/4kindgame/assets/cover4devweb.jpg",
     "desc_full": "DESCFULL",
     "go": {
-      "title": "Play now",
+      "title": "Play now in «4Kind»",
       "text": "Play now",
-      "url": "#goplay"
+      "url": "/4kindgame/"
     }
   }*/
-  /*"crumbleworld": {}*/
+  /*"crumbleworldgame": {
+    "name": "Crubleworld",
+    "desc": "DESC",
+    "cover": "/crumbleworldgame/assets/cover4devweb.jpg",
+    "desc_full": "DESCFULL",
+    "go": {
+      "title": "Play now in «Crumbleworld»",
+      "text": "Play now",
+      "url": "/crumbleworldgame/"
+    }
+  }*/
 }
