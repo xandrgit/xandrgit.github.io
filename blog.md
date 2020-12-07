@@ -1,7 +1,6 @@
 ---
 layout: default
 permalink: /blog
-type: blogList
 ---
 
 <ul>
