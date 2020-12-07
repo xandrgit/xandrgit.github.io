@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: /blog
+type: blogList
 ---
 
 <ul>
