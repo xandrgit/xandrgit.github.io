@@ -1,1 +1,1 @@
-{% include index.md %}
+{% include_relative index.md %}
