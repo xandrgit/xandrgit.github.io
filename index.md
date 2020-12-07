@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{{ site }}
-
 <ul>
   {% for prj in site.posts %}
     <li>
