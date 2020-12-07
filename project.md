@@ -1,1 +1,3 @@
-{% include_relative index.md %}
+---
+redirect_to: /
+---
