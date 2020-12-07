@@ -1,9 +1,1 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        {{ content }}
-    </body>
-</html>
+<!DOCTYPE html><html><head>{% include head.html %}</head><body>{% if page.type == "blogArticle" %}{{ content }}{% else %}<div id="root"></div><script src="#script"></script>{% endif %}</body></html>
