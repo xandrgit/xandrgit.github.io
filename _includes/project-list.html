@@ -1,0 +1,8 @@
+<ul>
+  {% for prj in data.project %}
+    <li>
+      <h2><a href="{{ prj.url }}">{{ prj.title }}</a></h2>
+      <p>{{ prj.desc }}</p>
+    </li>
+  {% endfor %}
+</ul>
