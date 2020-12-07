@@ -1,2 +1,9 @@
-<h2>DEFAULT</h2>
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ page.lang | 'en' }}">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>
