@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{{ site.posts }}
+
 <ul>
   {% for prj in site.posts.project %}
     <li>
