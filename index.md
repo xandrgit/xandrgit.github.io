@@ -1,4 +1,6 @@
 ---
 layout: default
-type: project
 ---
+
+
+PROJECT LIST
