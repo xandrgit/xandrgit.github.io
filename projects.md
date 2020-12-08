@@ -1,5 +1,5 @@
 ---
 layout: default
-type: projectList
+type: project
 permalink: /projects
 ---
