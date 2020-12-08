@@ -10,7 +10,10 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
       - name: Build
-        run: echo 'demo' >> d
+        run: |
+          echo 'demo' >> d.txt
+          git add .
+          git commit -m "demo"
       - name: Push
         uses: ad-m/github-push-action@master
         with:
