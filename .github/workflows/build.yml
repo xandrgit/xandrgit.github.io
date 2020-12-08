@@ -4,10 +4,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build
-        uses: actions/checkout@v2.3.4
       - uses: actions/setup-node@v2.1.2
-      - run: ls
+      - uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Build
+        run: ls
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
