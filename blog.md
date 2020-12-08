@@ -1,5 +1,6 @@
 ---
 layout: default
+type: blog
 permalink: /blog/
 ---
 
