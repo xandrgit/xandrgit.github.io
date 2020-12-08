@@ -13,6 +13,7 @@ jobs:
         run: |
           echo 'demo' >> d.txt
           ls
+          git add *
       - name: Push
         uses: ad-m/github-push-action@master
         with:
