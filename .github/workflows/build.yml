@@ -3,4 +3,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    run: echo "Hello"
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: Build
+        run: echo "Hi"
