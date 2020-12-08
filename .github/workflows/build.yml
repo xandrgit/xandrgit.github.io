@@ -10,4 +10,9 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
       - name: Build
-        run: ls
+        run: echo 'demo' >> d
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: '${{ github.ref }}'
