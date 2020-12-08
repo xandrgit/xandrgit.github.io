@@ -1,5 +1,4 @@
 ---
 layout: default
+redirect_to: /projects
 ---
-
-<p>HOME</p>
