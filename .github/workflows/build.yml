@@ -1,26 +1,25 @@
-#on: push
+on: push
 
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/setup-node@master
-#      - uses: actions/checkout@master
-#        with:
-#          persist-credentials: false
-#          fetch-depth: 0
-#      - name: Build
-#        run: |
-#          echo 'demo' >> d.txt
-#          ls
-#      - name: Commit
-#        run: |
-#          git config --local user.email "biz.showpozitif5@gmail.com"
-#          git config --local user.name "Alexander Antonov"
-#          git add *
-#          git commit -m 'demo' -a
-#      - name: Push
-#        uses: ad-m/github-push-action@master
-#        with:
-#          github_token: '${{ secrets.GITHUB_TOKEN }}'
-#          branch: '${{ github.ref }}'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@master
+      - uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Build
+        run: |
+          echo 'demo' >> d.txt
+      - name: Commit
+        run: |
+          git config --local user.email "biz.showpozitif5@gmail.com"
+          git config --local user.name "Alexander Antonov"
+          git add *
+          git commit -m 'demo' -a
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: '${{ github.ref }}'
